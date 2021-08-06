@@ -1,0 +1,90 @@
+.well-ProgressGroup {
+  display: flex;
+  background: #d3d4d5;
+  flex-direction: row;
+  border-radius: 0.5em 0.5em 0 0;
+  overflow: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.gotoCard {
+    width: 50%; 
+    height: 150px; 
+    background-color: rgb(236, 193, 135); 
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 32px -7px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 10px 10px 32px -7px rgba(0,0,0,0.42);
+    -moz-box-shadow: 10px 10px 32px -7px rgba(0,0,0,0.42);
+    transition: 1s;
+}
+
+.gotoCard:hover{
+  background-color: rgb(235, 174, 94);
+  box-shadow: 10px 10px 32px -2px rgba(0,0,0,0.64);
+  -webkit-box-shadow: 10px 10px 32px -2px rgba(0,0,0,0.64);
+  -moz-box-shadow: 10px 10px 32px -2px rgba(0,0,0,0.64);
+}
+
+.font1{
+    font-family:'Karla','Merriweather','Roboto',Times;
+}
+
+.font2{
+    font-family:'Merriweather', 'Roboto', Times;
+}
+
+.font3{
+    font-family:'Roboto', Times, 'Arial';
+}
+
+.headerGotoMessage{
+  font-weight:bold;
+  font-size:30px;
+}
+
+.childGotoMessage{
+  font-size:20px;
+}
+
+@keyframes loadbar {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.well-ProgressGroup--progress {
+  transform: translateX(-100%);
+  animation: loadbar 5s linear forwards; 
+/*   -webkit-animation: loadbar 1s forwards; */
+  opacity: 0;
+  background: blue;
+}
+
+.well-ProgressGroup--progress:not(:last-child) {
+  border-right: 1px solid white;
+} 
+
+.well-background--concept1 {
+  background: #101820FF;
+}
+
+.well-background--concept2 {
+  background: blue;
+}
+
+.well-background--concept3 {
+  background: purple;
+}
+
+.well-background--concept4 {
+  background: red;
+}
+
+.well-background--concept5 {
+  background: green;
+} 

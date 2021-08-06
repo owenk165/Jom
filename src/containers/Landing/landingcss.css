@@ -1,0 +1,91 @@
+.centeredContainer{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color:#FBFBF8;
+}
+
+text{
+    padding-left:1rem;
+}
+
+.newLink{
+    background-color:rgba(0, 0, 0, 0.0);
+    border-width:2.5px;
+    border-radius:5px;
+    width:150px;
+    border-color:black;
+    transition:0.5s;
+}
+
+.newLink:disabled{
+    background-color:rgba(0, 0, 0, 1);
+    color:rgba(169,169,169,1);
+    transition:0.5s;
+}
+
+.anotherLink{
+    margin-left:1.5rem;
+    background-color:rgba(0, 0, 0, 1);
+    border-width:2px;
+    border-color:black;
+    border-radius:5px;
+    width:150px;
+    color:white;
+}
+
+.sb{
+    font-family: 'Merriweather';
+    font-size: 1em;
+    height:2em;
+}
+
+.font1{
+    font-family:'Karla','Merriweather','Roboto',Times;
+}
+
+.font2{
+    font-family:'Merriweather', 'Roboto', Times;
+}
+
+.font3{
+    font-family:'Roboto', Times, 'Arial';
+}
+
+.inputBox{
+    background-color:rgb(251,251,248,0.6)
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .urlBox {
+    width: 50%;
+    font-size: 1.2em;
+    padding:0.2em;
+  }
+
+  .topFont1{
+      font-size: 5em;
+  }
+
+  .topFont2{
+      font-size: 2em;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .urlBox {
+    width: 90%;
+    font-size: 1.5em;
+  }
+
+  .topFont1{
+      font-size: 2.5em;
+  }
+  
+  .topFont2{
+      font-size: 1.5em;
+  }
+}
