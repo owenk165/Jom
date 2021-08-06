@@ -4,7 +4,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
 import { UserSessionContext } from '../../contexts/UserSession';
 import { JomLogo, JomLogo2HDSVG} from '../../assets/index';
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
@@ -16,10 +16,14 @@ export default function Navbar() {
     var navigation; 
 
     function logout(e){
-        console.log(logout);
         e.preventDefault(); 
         updateUsername('');
         window.location.reload();
+    }
+
+    function customRedirect(e, href) {
+        e.preventDefault();
+        <Link to="/Login/"/>
     }
 
     if (currentUsername != null || currentUsername == "") {
