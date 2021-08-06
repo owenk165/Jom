@@ -13,6 +13,14 @@ export default function Login() {
   const [isFetching, setIsFetching] = useState(false);
   const [loginResponse, setLoginResponse] = useState('');
 
+  let config = {
+    headers: {
+      "Bypass-Tunnel-Reminder": "-",
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': '*',
+    }
+  }
+
   function isValidUsernameFormat(username) {
     var res = username.match(/^[A-Za-z0-9._]{4,20}$/);
     return (res !== null);
@@ -41,7 +49,7 @@ export default function Login() {
     }
 
     if(isValidPasswordFormat(password) && isValidUsernameFormat(username)){
-      const response = axios.post(`https://jom123.loca.lt/loginAccount`, reqData)
+      const response = axios.post(`https://jom123.loca.lt/loginAccount`, reqData, config)
       .then((result) => {
         console.log('login success');
         console.log(result);
@@ -96,7 +104,7 @@ export default function Login() {
               <div class="login-floating-label">
                 <input placeholder="Username" type="text" name="username" id="username" autoComplete="off" 
                   pattern="[A-Za-z0-9._]{4,20}"
-                  title="Username is in alphanumeric between 4 to 20 characters"/>
+                  title="Username must be in alphanumeric between 4 to 20 characters"/>
                 <label for="username">Username</label>
                   <div class="icon">
                     <UserIcon />

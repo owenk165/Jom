@@ -13,6 +13,14 @@ export default function ForgotPassword() {
   const [isFetching, setIsFetching] = useState(false);
   const [updateResponse, setUpdateResponse] = useState('');
 
+  let config = {
+    headers: {
+      "Bypass-Tunnel-Reminder": "-",
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': '*',
+    }
+  }
+
   function isValidUsernameFormat(username) {
     var res = username.match(/^[A-Za-z0-9._]{4,20}$/);
     return (res !== null);
@@ -56,7 +64,7 @@ export default function ForgotPassword() {
 
     if (isValidUsernameFormat(username) && isValidEmailFormat(email) 
       && isValidPasswordFormat(password) && isSamePassword(password, confirm_password)){
-      const response = axios.put(`https://jom123.loca.lt/changePassword`, reqData)
+      const response = axios.put(`https://jom123.loca.lt/changePassword`, reqData, config)
       .then((result) => {
         console.log('Password changed successful');
         console.log(result);
@@ -111,7 +119,7 @@ export default function ForgotPassword() {
               <div class="forgot-floating-label">
                 <input placeholder="Username" required="required" type="text" name="username" id="username" autoComplete="off"
                   pattern="[A-Za-z0-9._]{4,20}"
-                  title="Username is in alphanumeric between 4 to 20 characters"/>
+                  title="Username must be in alphanumeric between 4 to 20 characters"/>
                 <label for="username">Username</label>
                   <div class="icon">
                     <UserIcon />
@@ -130,7 +138,8 @@ export default function ForgotPassword() {
 
               <div class="forgot-floating-label">
                 <input placeholder="Password" required="required" type="password" name="password" id="password" autoComplete="off"
-                  pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,17}"/>
+                  pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,17}"
+                  title="Password must contain at least 1 uppercase letter, 1 number, and be between 8 to 16 characters"/>
                   <label for="password">New password</label>
                   <div class="icon">
                     <LockClosedIcon/>

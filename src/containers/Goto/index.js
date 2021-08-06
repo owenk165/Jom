@@ -15,6 +15,14 @@ export default function Goto() {
     height={40}
   />);
 
+  let config = {
+    headers: {
+      "Bypass-Tunnel-Reminder": "-",
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': '*',
+    }
+  }
+
   useEffect(()=>{ 
     // [!] Retrieve last segment of the URL
     const thePath = window.location.href;
@@ -23,7 +31,7 @@ export default function Goto() {
     console.log('last item '+lastItem);
 
     var status;
-    const res = axios.post('https://jom123.loca.lt/goto/'+lastItem)
+    const res = axios.post('https://jom123.loca.lt/goto/'+lastItem, {}, config)
       .then(result => {
         console.log(result);
         if(result.data.status == 'ok'){
@@ -37,7 +45,7 @@ export default function Goto() {
           );
           setTimeout(() => {
             window.location.href = result.data.redirectLink;
-          }, 800000);
+          }, 8000);
         } else if(result.data.status == "not-ok"){
           setBoxInformation(
             <div>
@@ -47,7 +55,13 @@ export default function Goto() {
           );
         }
       })
-      .catch(error => {console.log("ERROR!"); console.log(error);});
+      .catch(error => {console.log("ERROR!"); console.log(error);
+        setBoxInformation(
+          <div>
+            <p class="font1 headerGotoMessage">Error fetching database</p>
+            <p class="font2 childGotoMessage">test</p>
+          </div>
+        );});
 
   },[])
   return (
