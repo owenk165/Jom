@@ -114,7 +114,7 @@ export default function Landing() {
                     />
                   </div>
                   :
-                  <div onClick={() => { navigator.clipboard.writeText(copyLink); }}>{message}</div>
+                  <div className="font2 topFont3" onClick={() => { navigator.clipboard.writeText(copyLink); }}>{message}</div>
                 }
                 
               </div>

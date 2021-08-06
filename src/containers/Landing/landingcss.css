@@ -72,6 +72,10 @@ text{
   .topFont2{
       font-size: 2em;
   }
+
+  .topFont3{
+      font-size: 1em;
+  }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -87,5 +91,9 @@ text{
   
   .topFont2{
       font-size: 1.5em;
+  }
+
+  .topFont3{
+      font-size: 0.75em;
   }
 }
