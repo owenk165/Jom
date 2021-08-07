@@ -56,7 +56,7 @@ export default function Landing() {
       const res = axios.post('https://jom123.loca.lt/createLink', reqData, config)
       .then((result) => {
         console.log(result); 
-        var shortenedLink = window.location.protocol + '//' + window.location.host + '/goto/' + result.data.urlKey;
+        var shortenedLink = window.location.protocol + '//' + window.location.host + '/Jom' + '/goto/' + result.data.urlKey;
         var expiryDate = result.data.expiryDateUNIX;
         setCopyLink(shortenedLink);
         setMessage(<div>

@@ -160,8 +160,8 @@ export default function Register() {
               
 
               <div style={{display:'flex', flexDirection:'row', alignItems:'flex-end', width:'100%' }}>
-                <a href="/login" class="discrete" target="">Login</a>
-                <a href="/Forgot_password" class="discrete" target="">Forgot password</a>
+                <a href="/Jom/login" class="discrete" target="">Login</a>
+                <a href="/Jom/Forgot_password" class="discrete" target="">Forgot password</a>
               </div>
 
             </form>

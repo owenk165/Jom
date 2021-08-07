@@ -157,7 +157,7 @@ export default function UserData() {
       console.log(fullKeyList);
       fullKeyList.map( (dataString, index) => {
         var data = JSON.parse(dataString);
-        var urlLink = window.location.protocol + '//' + window.location.host + '/goto/' + data.urlKey;
+        var urlLink = window.location.protocol + '//' + window.location.host + '/Jom'+ '/goto/' + data.urlKey;
         var originalLink = data.redirectLink;
 
         // For deleting

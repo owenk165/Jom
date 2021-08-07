@@ -32,8 +32,8 @@ export default function Navbar() {
         ]
     } else {
         navigation = [
-            { name: 'Login', href: '/login', current: false },
-            { name: 'Register', href: '/register', current: false },
+            { name: 'Login', href: '/Jom/login', current: false },
+            { name: 'Register', href: '/Jom/register', current: false },
         ]
     }
 

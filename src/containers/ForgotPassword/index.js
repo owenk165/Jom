@@ -160,8 +160,8 @@ export default function ForgotPassword() {
               
 
               <div style={{display:'flex', flexDirection:'row', alignItems:'flex-end', width:'100%' }}>
-                <a href="/Login" class="discrete" target="">Login</a>
-                <a href="/Register" class="discrete" target="">Register</a>
+                <a href="/Jom/Login" class="discrete" target="">Login</a>
+                <a href="/Jom/Register" class="discrete" target="">Register</a>
               </div>
 
             </form>

@@ -32,7 +32,7 @@ export default function Routing() {
 
     return (
         <div>
-            <Router basename="owenk165.github.io/Jom" >
+            <Router basename={process.env.PUBLIC_URL} >
                 <div>
                     <Navbar/>
                     <Switch>
@@ -54,7 +54,7 @@ export default function Routing() {
                         <DecisionRoute isLoggedIn={(currentUsername != null || currentUsername != "")} path="/Forgot_password">
                             <ForgotPassword />
                         </DecisionRoute>
-                        <Route path="/">
+                        <Route exact path="/">
                             <Landing />
                         </Route>
                     </Switch>
