@@ -32,7 +32,7 @@ export default function Routing() {
 
     return (
         <div>
-            <Router>
+            <Router basename="owenk165.github.io/Jom" >
                 <div>
                     <Navbar/>
                     <Switch>
