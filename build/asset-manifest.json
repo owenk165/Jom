@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Jom/static/css/main.a2a1a152.chunk.css",
+    "main.js": "/Jom/static/js/main.b0c55d45.chunk.js",
+    "main.js.map": "/Jom/static/js/main.b0c55d45.chunk.js.map",
+    "runtime-main.js": "/Jom/static/js/runtime-main.9bce406c.js",
+    "runtime-main.js.map": "/Jom/static/js/runtime-main.9bce406c.js.map",
+    "static/js/2.de49e21a.chunk.js": "/Jom/static/js/2.de49e21a.chunk.js",
+    "static/js/2.de49e21a.chunk.js.map": "/Jom/static/js/2.de49e21a.chunk.js.map",
+    "static/js/3.8cb94452.chunk.js": "/Jom/static/js/3.8cb94452.chunk.js",
+    "static/js/3.8cb94452.chunk.js.map": "/Jom/static/js/3.8cb94452.chunk.js.map",
+    "index.html": "/Jom/index.html",
+    "static/css/main.a2a1a152.chunk.css.map": "/Jom/static/css/main.a2a1a152.chunk.css.map",
+    "static/js/2.de49e21a.chunk.js.LICENSE.txt": "/Jom/static/js/2.de49e21a.chunk.js.LICENSE.txt",
+    "static/media/JomHD.svg": "/Jom/static/media/JomHD.df200c5e.svg",
+    "static/media/JomLogo.svg": "/Jom/static/media/JomLogo.5d6e2afe.svg",
+    "static/media/dog_looking.jpg": "/Jom/static/media/dog_looking.184da9da.jpg",
+    "static/media/guy_work.jpg": "/Jom/static/media/guy_work.1a7b73ed.jpg",
+    "static/media/harold.jpg": "/Jom/static/media/harold.34ac04a8.jpg",
+    "static/media/mobile.jpg": "/Jom/static/media/mobile.c5b9ccd2.jpg",
+    "static/media/login.scss": "/Jom/static/media/primaryLeft.c8feb156.jpeg",
+    "static/media/reactLogo.svg": "/Jom/static/media/reactLogo.6ce24c58.svg",
+    "static/media/register.scss": "/Jom/static/media/secondaryLeft.af04f3bb.jpg",
+    "static/media/forgot.scss": "/Jom/static/media/tertiaryLeft.2786c09d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9bce406c.js",
+    "static/js/2.de49e21a.chunk.js",
+    "static/css/main.a2a1a152.chunk.css",
+    "static/js/main.b0c55d45.chunk.js"
+  ]
+}
