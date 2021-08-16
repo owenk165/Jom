@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Jom/static/css/main.a2a1a152.chunk.css",
-    "main.js": "/Jom/static/js/main.403d3607.chunk.js",
-    "main.js.map": "/Jom/static/js/main.403d3607.chunk.js.map",
+    "main.js": "/Jom/static/js/main.93b4b09a.chunk.js",
+    "main.js.map": "/Jom/static/js/main.93b4b09a.chunk.js.map",
     "runtime-main.js": "/Jom/static/js/runtime-main.9bce406c.js",
     "runtime-main.js.map": "/Jom/static/js/runtime-main.9bce406c.js.map",
-    "static/js/2.de49e21a.chunk.js": "/Jom/static/js/2.de49e21a.chunk.js",
-    "static/js/2.de49e21a.chunk.js.map": "/Jom/static/js/2.de49e21a.chunk.js.map",
+    "static/js/2.36aaaba9.chunk.js": "/Jom/static/js/2.36aaaba9.chunk.js",
+    "static/js/2.36aaaba9.chunk.js.map": "/Jom/static/js/2.36aaaba9.chunk.js.map",
     "static/js/3.8cb94452.chunk.js": "/Jom/static/js/3.8cb94452.chunk.js",
     "static/js/3.8cb94452.chunk.js.map": "/Jom/static/js/3.8cb94452.chunk.js.map",
     "index.html": "/Jom/index.html",
     "static/css/main.a2a1a152.chunk.css.map": "/Jom/static/css/main.a2a1a152.chunk.css.map",
-    "static/js/2.de49e21a.chunk.js.LICENSE.txt": "/Jom/static/js/2.de49e21a.chunk.js.LICENSE.txt",
+    "static/js/2.36aaaba9.chunk.js.LICENSE.txt": "/Jom/static/js/2.36aaaba9.chunk.js.LICENSE.txt",
     "static/media/JomHD.svg": "/Jom/static/media/JomHD.df200c5e.svg",
     "static/media/JomLogo.svg": "/Jom/static/media/JomLogo.5d6e2afe.svg",
     "static/media/dog_looking.jpg": "/Jom/static/media/dog_looking.184da9da.jpg",
@@ -25,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9bce406c.js",
-    "static/js/2.de49e21a.chunk.js",
+    "static/js/2.36aaaba9.chunk.js",
     "static/css/main.a2a1a152.chunk.css",
-    "static/js/main.403d3607.chunk.js"
+    "static/js/main.93b4b09a.chunk.js"
   ]
 }
